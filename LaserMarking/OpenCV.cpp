@@ -111,3 +111,8 @@ void CoordinateRotation( cv::Point2f input, cv::Point2f *output, double angle)
 	output->x = (float)(input.x * cos(angle) - input.y * sin(angle)); 
 	output->y = (float)(input.x * sin(angle) + input.y * cos(angle));
 }	
+
+
+
+
+  

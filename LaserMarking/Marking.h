@@ -61,3 +61,7 @@ private:
 	double m_BoardLength;
 	double m_BoardWidth;
 };
+
+
+
+

@@ -2,7 +2,8 @@
 
 #include "stdafx.h"
 #include "Main.h"
-
+#include "CoaxisLaserMark.h"
+#pragma comment(lib, "AngeloRTV.lib")
 using namespace LaserMarking;
 
 [STAThreadAttribute]
@@ -13,6 +14,8 @@ int main(array<System::String ^> ^args)
 	Application::SetCompatibleTextRenderingDefault(false); 
 
 	// 建立主視窗並執行
-	Application::Run(gcnew Main());
+	Application::Run(gcnew CoaxisLaserMark());
+
+	//Application::Run(gcnew Main());
 	return 0;
 }

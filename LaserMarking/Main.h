@@ -12,7 +12,7 @@
 #include "Angelo.h"
 #include "AngeloRTVErrorCode.h"
 #include "Type_def.h"
-#pragma comment(lib, "AngeloRTV.lib")
+
 
 //CMotorControl g_Motor[2];
 vector<_MarkInfo> Mark;
@@ -167,17 +167,17 @@ namespace LaserMarking {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle12 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle20 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle21 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle22 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle13 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle14 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle15 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle16 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle17 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle18 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle19 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle9 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle10 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle11 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Main::typeid));
 			this->pictureBox_Camera = (gcnew System::Windows::Forms::PictureBox());
 			this->bPN = (gcnew System::Windows::Forms::Button());
@@ -311,42 +311,42 @@ namespace LaserMarking {
 			this->DGVMarkInfo->AllowUserToDeleteRows = false;
 			this->DGVMarkInfo->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), 
 				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			dataGridViewCellStyle12->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle12->BackColor = System::Drawing::SystemColors::ActiveBorder;
-			dataGridViewCellStyle12->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::ActiveBorder;
+			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle12->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle12->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle12->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle12->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->DGVMarkInfo->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->DGVMarkInfo->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->DGVMarkInfo->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->DGVMarkInfo->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(8) {this->rLaser, this->rName, 
 				this->rContent, this->rDisToEdgeX, this->rDisToEdgeY, this->rMarkLength, this->rMarkWidth, this->rAngle});
-			dataGridViewCellStyle20->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle20->BackColor = System::Drawing::SystemColors::Window;
-			dataGridViewCellStyle20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle9->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle9->BackColor = System::Drawing::SystemColors::Window;
+			dataGridViewCellStyle9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle20->ForeColor = System::Drawing::SystemColors::ControlText;
-			dataGridViewCellStyle20->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle20->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle20->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->DGVMarkInfo->DefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle9->ForeColor = System::Drawing::SystemColors::ControlText;
+			dataGridViewCellStyle9->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle9->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle9->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->DGVMarkInfo->DefaultCellStyle = dataGridViewCellStyle9;
 			this->DGVMarkInfo->GridColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->DGVMarkInfo->Location = System::Drawing::Point(658, 120);
 			this->DGVMarkInfo->Name = L"DGVMarkInfo";
-			dataGridViewCellStyle21->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle21->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, 
+			dataGridViewCellStyle10->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle10->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, 
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(136)));
-			dataGridViewCellStyle21->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle21->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle21->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle21->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->DGVMarkInfo->RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle10->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle10->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle10->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle10->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->DGVMarkInfo->RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
 			this->DGVMarkInfo->RowHeadersWidthSizeMode = System::Windows::Forms::DataGridViewRowHeadersWidthSizeMode::AutoSizeToAllHeaders;
-			dataGridViewCellStyle22->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			this->DGVMarkInfo->RowsDefaultCellStyle = dataGridViewCellStyle22;
+			dataGridViewCellStyle11->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			this->DGVMarkInfo->RowsDefaultCellStyle = dataGridViewCellStyle11;
 			this->DGVMarkInfo->RowTemplate->Height = 24;
 			this->DGVMarkInfo->Size = System::Drawing::Size(705, 356);
 			this->DGVMarkInfo->TabIndex = 76;
@@ -359,63 +359,63 @@ namespace LaserMarking {
 			// 
 			// rName
 			// 
-			dataGridViewCellStyle13->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rName->DefaultCellStyle = dataGridViewCellStyle13;
+			this->rName->DefaultCellStyle = dataGridViewCellStyle2;
 			this->rName->HeaderText = L"MarkName";
 			this->rName->Name = L"rName";
 			this->rName->Width = 130;
 			// 
 			// rContent
 			// 
-			dataGridViewCellStyle14->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rContent->DefaultCellStyle = dataGridViewCellStyle14;
+			this->rContent->DefaultCellStyle = dataGridViewCellStyle3;
 			this->rContent->HeaderText = L"Content";
 			this->rContent->Name = L"rContent";
 			this->rContent->Width = 250;
 			// 
 			// rDisToEdgeX
 			// 
-			dataGridViewCellStyle15->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rDisToEdgeX->DefaultCellStyle = dataGridViewCellStyle15;
+			this->rDisToEdgeX->DefaultCellStyle = dataGridViewCellStyle4;
 			this->rDisToEdgeX->HeaderText = L"DisToEdge-X";
 			this->rDisToEdgeX->Name = L"rDisToEdgeX";
 			this->rDisToEdgeX->Width = 150;
 			// 
 			// rDisToEdgeY
 			// 
-			dataGridViewCellStyle16->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rDisToEdgeY->DefaultCellStyle = dataGridViewCellStyle16;
+			this->rDisToEdgeY->DefaultCellStyle = dataGridViewCellStyle5;
 			this->rDisToEdgeY->HeaderText = L"DisToEdge-Y";
 			this->rDisToEdgeY->Name = L"rDisToEdgeY";
 			this->rDisToEdgeY->Width = 150;
 			// 
 			// rMarkLength
 			// 
-			dataGridViewCellStyle17->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rMarkLength->DefaultCellStyle = dataGridViewCellStyle17;
+			this->rMarkLength->DefaultCellStyle = dataGridViewCellStyle6;
 			this->rMarkLength->HeaderText = L"MarkLength";
 			this->rMarkLength->Name = L"rMarkLength";
 			this->rMarkLength->Width = 130;
 			// 
 			// rMarkWidth
 			// 
-			dataGridViewCellStyle18->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle7->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rMarkWidth->DefaultCellStyle = dataGridViewCellStyle18;
+			this->rMarkWidth->DefaultCellStyle = dataGridViewCellStyle7;
 			this->rMarkWidth->HeaderText = L"MarkWidth";
 			this->rMarkWidth->Name = L"rMarkWidth";
 			this->rMarkWidth->Width = 130;
 			// 
 			// rAngle
 			// 
-			dataGridViewCellStyle19->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			dataGridViewCellStyle8->Font = (gcnew System::Drawing::Font(L"Tahoma", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->rAngle->DefaultCellStyle = dataGridViewCellStyle19;
+			this->rAngle->DefaultCellStyle = dataGridViewCellStyle8;
 			this->rAngle->HeaderText = L"Angle";
 			this->rAngle->Name = L"rAngle";
 			this->rAngle->Width = 130;
@@ -545,10 +545,10 @@ namespace LaserMarking {
 			this->tabPage_FactoryZone->Controls->Add(this->label8);
 			this->tabPage_FactoryZone->Controls->Add(this->bSetOriginal);
 			this->tabPage_FactoryZone->Controls->Add(this->label9);
-			this->tabPage_FactoryZone->Location = System::Drawing::Point(4, 21);
+			this->tabPage_FactoryZone->Location = System::Drawing::Point(4, 22);
 			this->tabPage_FactoryZone->Name = L"tabPage_FactoryZone";
 			this->tabPage_FactoryZone->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage_FactoryZone->Size = System::Drawing::Size(650, 237);
+			this->tabPage_FactoryZone->Size = System::Drawing::Size(650, 236);
 			this->tabPage_FactoryZone->TabIndex = 1;
 			this->tabPage_FactoryZone->Text = L"FactoryZone";
 			this->tabPage_FactoryZone->UseVisualStyleBackColor = true;
@@ -774,9 +774,9 @@ namespace LaserMarking {
 			// tabPage_ErrorMsg
 			// 
 			this->tabPage_ErrorMsg->Controls->Add(this->DGVErrorMsg);
-			this->tabPage_ErrorMsg->Location = System::Drawing::Point(4, 21);
+			this->tabPage_ErrorMsg->Location = System::Drawing::Point(4, 22);
 			this->tabPage_ErrorMsg->Name = L"tabPage_ErrorMsg";
-			this->tabPage_ErrorMsg->Size = System::Drawing::Size(650, 237);
+			this->tabPage_ErrorMsg->Size = System::Drawing::Size(650, 236);
 			this->tabPage_ErrorMsg->TabIndex = 2;
 			this->tabPage_ErrorMsg->Text = L"Error message";
 			this->tabPage_ErrorMsg->UseVisualStyleBackColor = true;
@@ -823,10 +823,10 @@ namespace LaserMarking {
 			this->tabPage_Setting->Controls->Add(this->bGetPos);
 			this->tabPage_Setting->Controls->Add(this->bMove_total);
 			this->tabPage_Setting->Controls->Add(this->bThreshold);
-			this->tabPage_Setting->Location = System::Drawing::Point(4, 21);
+			this->tabPage_Setting->Location = System::Drawing::Point(4, 22);
 			this->tabPage_Setting->Name = L"tabPage_Setting";
 			this->tabPage_Setting->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage_Setting->Size = System::Drawing::Size(650, 237);
+			this->tabPage_Setting->Size = System::Drawing::Size(650, 236);
 			this->tabPage_Setting->TabIndex = 0;
 			this->tabPage_Setting->Text = L"Setting";
 			// 
@@ -897,6 +897,7 @@ namespace LaserMarking {
 			this->bGoHome->TabIndex = 82;
 			this->bGoHome->Text = L"Motor Go Home";
 			this->bGoHome->UseVisualStyleBackColor = false;
+			this->bGoHome->Click += gcnew System::EventHandler(this, &Main::bGoHome_Click);
 			// 
 			// bMove_X
 			// 
@@ -1020,7 +1021,7 @@ namespace LaserMarking {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1028, 990);
+			this->ClientSize = System::Drawing::Size(1028, 778);
 			this->Controls->Add(this->label13);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->tBoardLength);
@@ -2560,6 +2561,8 @@ private: System::Void bShowLine_Click(System::Object^  sender, System::EventArgs
 				 showLine = 1;
 			 else
 				 showLine = 0;
+		 }
+private: System::Void bGoHome_Click(System::Object^  sender, System::EventArgs^  e) {
 		 }
 };
 }

@@ -54,6 +54,10 @@ using namespace std;
 
 #define CCDPortNo 3
 
+#define scComSAMLightClientCtrlDoubleValueTypeScannerXPos 12
+#define scComSAMLightClientCtrlDoubleValueTypeScannerYPos 13
+#define scComSAMLightClientCtrlDoubleValueTypeScannerZPos 14
+
 
 #define scComSAMLightClientCtrlLongValueTypeMotionAxis 17
 #define scComSAMLightClientCtrlLongValueTypeMotionWaitForEnd 18
